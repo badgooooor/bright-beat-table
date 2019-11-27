@@ -1,0 +1,75 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.28.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: nattapat puangpipat kmitl Flex license: MDK Professional 5.28 (Flex) (mdk_pro) Operation stops: 13 Aug 2020
+ 
+Tool Versions:
+Toolchain:       MDK Professional 5.28 (Flex)  Version: 5.28.0.0
+Toolchain Path:  D:\Keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.28.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.6.0
+Dialog DLL:      TCM.DLL V1.36.2.0
+ 
+<h2>Project:</h2>
+C:\Users\Moment\Desktop\dont-give-up\MDK-ARM\dont-give-up.uvprojx
+Project File Date:  11/25/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil\ARM\ARMCC\Bin'
+*** Warning: You are compiling one or more files of source type C++ and have selected 'use MicroLIB'. MicroLIB does not support C++!
+  
+Build target 'dont-give-up'
+compiling main.cpp...
+..\Src\main.cpp(491): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	double volin = input_vol/pow(2,12.0f)*3.3 ;
+..\Src\main.cpp(618): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	if(input_rotary/pow(2,12.0f)*3.3 <= 1.5){
+..\Src\main.cpp(625): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	else if(input_rotary/pow(2,12.0f)*3.3 <= 3.1){
+..\Src\main.cpp: 3 warnings, 0 errors
+linking...
+Program Size: Code=21948 RO-data=892 RW-data=60 ZI-data=6764  
+FromELF: creating hex file...
+"dont-give-up\dont-give-up.axf" - 0 Error(s), 3 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.6.0.pack
+                ARM.CMSIS.5.6.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.3.0
+   * Component: DSP Variant: Library Version: 1.7.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F7xx_DFP.2.12.0.pack
+                Keil.STM32F7xx_DFP.2.12.0
+                STMicroelectronics STM32F7 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_dont-give-up
+  D:\Keil\ARM\CMSIS\5.6.0\CMSIS\Core\Include
+  D:\Keil\ARM\CMSIS\5.6.0\CMSIS\DSP\Include
+  D:\Keil\Keil\STM32F7xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.3.0
+
+   * Component: ARM::CMSIS:DSP:Library:1.7.0
+      Include file:  CMSIS\DSP\Include\arm_math.h
+      Library file:  CMSIS\DSP\Lib\ARM\arm_cortexM7lfdp_math.lib
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>

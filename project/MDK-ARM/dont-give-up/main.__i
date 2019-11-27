@@ -1,0 +1,6 @@
+--cpp -c --cpu Cortex-M7.fp.dp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F7xx_HAL_Driver/Inc -I ../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I ../Drivers/CMSIS/Include -I ..\Src\WS2812B
+-I.\RTE\_dont-give-up
+-I"D:\Program Files\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include"
+-I"D:\Program Files\ARM\PACK\Keil\STM32F7xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include"
+-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F767xx -DUSE_HAL_DRIVER -DSTM32F767xx -DUSE_HAL_DRIVER -DSTM32F767xx
+-o dont-give-up\main.o --omf_browse dont-give-up\main.crf --depend dont-give-up\main.d "..\Src\main.cpp"
